@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+
+button{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div {
+    margin: 10px;
+}
