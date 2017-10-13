@@ -32,8 +32,14 @@ function onReady() {
             console.log(response);
             var isThereAWinner = false;
             $('.sugesstion').each(function (index, element) {
-                $(element).text(response[index])
-
+                $(element).text(response[index]);
+                if (response[index]=== 'Guess Higher'){
+                    $(element).css('background-color', 'tomato');
+                }
+                
+                else if (response[index] === 'Guess Lower') {
+                    $(element).css('background-color', 'lightblue');
+                };
                 if (response[index] === 'You guess correct') {
                     if (index === 4) {
                         alert('...boop...beeeep...HUMANS ARE INFERIOR...beep...boop...EAT MY METAL $#!7!!!!');

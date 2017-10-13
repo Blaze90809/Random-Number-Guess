@@ -49,9 +49,9 @@ app.post('/guess', function (req, res) {
         if (parseInt(req.body.guesses[i], 10) === currentNumber) {
             guesses.push('You guess correct');
         } else if (parseInt(req.body.guesses[i], 10) < currentNumber) {
-            guesses.push('guess higher');
+            guesses.push('Guess Higher');
         } else {
-            guesses.push('guess lower');
+            guesses.push('Guess Lower');
         }
     }
 

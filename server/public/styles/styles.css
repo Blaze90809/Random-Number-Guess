@@ -1,11 +1,14 @@
 body{
     text-align: center;
+    font-family: sans-serif;
+    background-color: lightgrey;
 }
 
 button{
     font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
+    background-color: rgb(65, 169, 238);
 }
 
 div {
@@ -30,4 +33,12 @@ div {
 
 .centerPic {
     margin: 0 auto;
+}
+
+.sugesstion {
+    padding:3px;
+}
+
+input {
+    margin: 8px;
 }
