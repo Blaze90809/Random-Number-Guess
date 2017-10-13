@@ -5,8 +5,29 @@ body{
 button{
     font-size: 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 div {
     margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#cat {
+    content: url(/styles/celebrationcat.jpg);
+    text-align: center;
+    height: 300px;
+    width: auto;
+}
+
+#robot {
+    content: url(/styles/robot.jpeg);
+    
+}
+
+.centerPic {
+    margin: 0 auto;
 }

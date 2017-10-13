@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
@@ -7,17 +9,67 @@
     <script src="scripts/client.js"></script>
     <title>Guess Numbers</title>
 </head>
+
 <body>
-        <h1>GUESS THE NUMBRE!!!?!!??!?!?!</h1>
+    <h1>GUESS THE NUMBRE!!!?!!??!?!?!</h1>
+    <div class="game-setting">
         <p>Pick your mode</p>
         <div class="difficulty">
-            <button id="Easy" data-difficulty = '10'>Easy</button>
-            <button id="Medium" data-difficulty = '50'>Medium</button>
-            <button id="Hard" data-difficulty = '100'>Hard</button>
+            <button id="Easy" data-difficulty='10'>Easy</button>
+            <button id="Medium" data-difficulty='50'>Medium</button>
+            <button id="Hard" data-difficulty='100'>Hard</button>
         </div>
         <div class="startGame">
             <p>press start to begin</p>
-            <button id="startGame">Start Game</button>
+            <button id="startGame" disabled>Start Game</button>
         </div>
+    </div>
+    <div class="game-board hidden">
+        <div id="stats">
+            <p>Difficulty:
+                <span id="difficulty">0</span> </br> 
+                Round: <span id="round">1</span>
+            </p>
+        </div>
+        <div class="player">
+            Player 1:
+            <span class="sugesstion"></span>
+            <br>
+            <input type="text">
+        </div>
+        <div class="player">
+            Player 2:
+            <span class="sugesstion"></span>
+            <br>
+            <input type="text">
+        </div>
+        <div class="player">
+            Player 3:
+            <span class="sugesstion"></span>
+            <br>
+            <input type="text">
+        </div>
+        <div class="player">
+            Player 4:
+            <span class="sugesstion"></span>
+            <br>
+            <input type="text">
+        </div>
+        <div class="bot">
+            Player Bot:
+            <span class="sugesstion"></span>
+            <br>
+            <input type="text">
+        </div>
+        <button id="guessNumber">Guess</button>
+        <button id="cancel">Cancel</button>
+    </div>
+    <button id="reset" class="hidden">Restart</button>
+    <div id="robot" class="hidden centerPic">
+    </div>
+    <div id="cat" class="hidden centerPic">
+    </div>
+    
 </body>
+
 </html>
